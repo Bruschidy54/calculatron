@@ -45,28 +45,40 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQ5-fC-EKx">
-                                <rect key="frame" x="135" y="265" width="130" height="70"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MQ5-fC-EKx">
+                                <rect key="frame" x="135" y="265" width="120" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="voN-Tk-TOp">
-                                        <rect key="frame" x="20" y="20" width="90" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZQ-0x-iQN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vH-0w-KPz">
-                                        <rect key="frame" x="20" y="20" width="90" height="30"/>
+                                        <rect key="frame" x="30" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6tS-hG-Eyb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQY-uH-YHo">
-                                        <rect key="frame" x="20" y="20" width="90" height="30"/>
+                                        <rect key="frame" x="60" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="x"/>
+                                        <connections>
+                                            <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4q-u6-v28"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlp-PV-Ovb">
-                                        <rect key="frame" x="20" y="20" width="90" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlp-PV-Ovb">
+                                        <rect key="frame" x="90" y="0.0" width="30" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="/"/>
+                                        <connections>
+                                            <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ddg-Ow-fRd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -101,11 +113,11 @@
                                 <exclude reference="8rg-3c-Yhk"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="JDt-P7-E3t"/>
+                                <exclude reference="gfE-Mp-eGY"/>
                                 <exclude reference="7T5-jl-7GY"/>
                                 <exclude reference="7eN-7W-8wy"/>
                                 <exclude reference="XuE-Dk-RkB"/>
-                                <exclude reference="JDt-P7-E3t"/>
-                                <exclude reference="gfE-Mp-eGY"/>
                                 <exclude reference="3yk-vE-9Rt"/>
                                 <exclude reference="qD7-hN-vfw"/>
                             </mask>
@@ -115,16 +127,22 @@
                                 <include reference="8rg-3c-Yhk"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="JDt-P7-E3t"/>
+                                <include reference="gfE-Mp-eGY"/>
                                 <include reference="7T5-jl-7GY"/>
                                 <include reference="7eN-7W-8wy"/>
                                 <include reference="XuE-Dk-RkB"/>
-                                <include reference="JDt-P7-E3t"/>
-                                <include reference="gfE-Mp-eGY"/>
                                 <include reference="3yk-vE-9Rt"/>
                                 <include reference="qD7-hN-vfw"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="bottomLabel" destination="8rg-3c-Yhk" id="4qi-eC-pzM"/>
+                        <outlet property="endOneTextField" destination="nQc-Jr-ET1" id="ado-Wm-bti"/>
+                        <outlet property="endTwoTextField" destination="RkA-sv-djX" id="K8d-m7-Hwg"/>
+                        <outlet property="topLabel" destination="Wen-Q8-uac" id="H5i-es-CVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
