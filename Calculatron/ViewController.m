@@ -25,6 +25,17 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)onButtonTapped:(UIButton *)sender {
+    self.topLabel.text = sender.currentTitle;
+    if ([self.topLabel.text isEqualToString:@"+"]){
+
+    } else if ([self.topLabel.text isEqualToString:@"-"]){
+
+    } else if ([self.topLabel.text isEqualToString:@"/"]){
+
+    } else {
+
+    }
+
 }
 
 
