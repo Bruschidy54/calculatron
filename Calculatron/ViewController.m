@@ -25,6 +25,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)onButtonTapped:(UIButton *)sender {
+    double endOne = self.endOneTextField.text.doubleValue;
+    double endtwo = self.endTwoTextField.text.doubleValue;
+    
+
 }
 
 
