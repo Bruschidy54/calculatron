@@ -30,13 +30,13 @@
 
     self.topLabel.text = sender.currentTitle;
     if ([self.topLabel.text isEqualToString:@"+"]){
-
+        self.bottomLabel.text = [NSString stringWithFormat:@"%f", endOne + endtwo];
     } else if ([self.topLabel.text isEqualToString:@"-"]){
-
+        self.bottomLabel.text = [NSString stringWithFormat:@"%f", endOne - endtwo];
     } else if ([self.topLabel.text isEqualToString:@"/"]){
-
+        self.bottomLabel.text = [NSString stringWithFormat:@"%f", endOne * endtwo];
     } else {
-
+        self.bottomLabel.text = [NSString stringWithFormat:@"%f", endOne / endtwo];
     }
 }
 
